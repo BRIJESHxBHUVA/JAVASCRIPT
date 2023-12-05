@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Q - 4</title>
+</head>
+<body>
+
+    <center>
+
+        <label for="">Enter Amount USD.</label><br><br>
+        <input type="text" id="amt"><br><br><br>
+
+        <h1 id="final"></h1>
+    </center>
+    
+</body>
+</html>
+
+<script>
+
+    let a = document.getElementById("amt").value 
+    let rs = 83.38
+
+    if(a == ""){
+        alert('Please enter amount')
+    }
+    else{
+        a *= rs
+    }
+    document.getElementById("final").innerHTML = "Amount in Rupees :" + a
+
+</script>

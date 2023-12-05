@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Q - 3</title>
+</head>
+<body>
+
+    <center>
+
+        <label for="">Enter Number of Purchase Item</label><br><br>
+        <input type="text" id="num"><br><br>
+
+        <label for="">Enter Spending Rupees on Purchase Item</label><br><br>
+        <input type="text" id="coin"><br><br><br>
+
+        <h1 id="final"></h1>
+    </center>
+    
+</body>
+</html>
+
+<script>
+
+    let a = document.getElementById("num").value 
+    let b = document.getElementById("coin").value
+
+    if(a == "" && b == ""){
+        alert("Plese First, Enter Value .")
+    }
+    else{
+        if(a >= 3 && b >= 100){
+            console.log("Congratulation ! You are Eligible for a Special Offer. !!")
+        }
+        else{
+            console.log("Sorry ! You are Not Eligible for the Special Offer.")
+        }
+    }
+</script>
