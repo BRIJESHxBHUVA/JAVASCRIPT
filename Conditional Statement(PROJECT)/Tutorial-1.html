@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Q - 1</title>
+</head>
+<body>
+    
+    <center>
+
+        <label for="">Enter A Charater </label><br><br>
+        <input type="text" id="char"><br><br><br>
+
+        <h1 id="final"></h1>
+    </center>
+</body>
+</html>
+
+<script>
+
+    let a = document.getElementById("char").value  
+
+    if(a == ""){
+        alert("Plese First, Enter Charater !!")
+    }
+    // else{
+    //     if(a == "a" || a == "e" || a == "i" || a == "o" || a == "u" || a == "A" || a == "E" || a == "I" || a == "O" || a == "U"){
+    //         document.getElementById("final").innerHTML = "Given Letter is Vowel."
+    //     }
+    //     else{
+    //         document.getElementById("")
+    //     }
+    // }
+
+    switch(a){
+        case 'a':
+            document.getElementById("final").innerHTML = "The Given Character Is Vowel Lowercase Alphabet 'A'";
+            break;
+
+        case "e": 
+        document.getElementById("final").innerHTML = "The Given Character Is Vowel Lowercase Alphabet 'E'";
+        break;
+
+        case "i" : 
+        document.getElementById("final").innerHTML = "The Given Character Is Lowercase Alphabet 'I'";
+        break;
+
+        case "o" :
+        document.getElementById("final").innerHTML = "The Given Character Is Lowercase Alphabet 'O'";
+        break;
+
+        case "u" : 
+        document.getElementById("final").innerHTML = "The Given Character Is Lowercase Alphabet 'U'";
+        break;
+
+        default : 
+        document.getElementById("final").innerHTML = "The Given Charater Is Consonant Alphabet.";
+        break;
+        
+    }
+</script>

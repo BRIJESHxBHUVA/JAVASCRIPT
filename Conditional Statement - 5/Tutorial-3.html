@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Q - 3</title>
+</head>
+<body>
+    
+    <center>
+
+        <label for="">Enter Traffic Light Colour</label><br><br>
+        <input type="text" id="light"><br><br>
+
+    </center>
+</body>
+</html>
+
+<script>
+
+    let a = document.getElementById("light").value 
+    let x
+
+    switch(a){
+        case "red":
+        x = "Plese Stop !!"
+        console.log(x)
+        break;
+
+        case "yellow" : 
+        x = "Caution !!";
+        console.log(x)
+        break;
+
+        case "green" : 
+        x = "Go Ahead!!"
+        console.log(x)
+        break;
+
+        default : x = "Invalid Light Colour."
+    }
+</script>

@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Q - 1</title>
+</head>
+<body>
+   <center>
+
+
+    <label for="">Enter degrees Fahrenheit </label><br><br>
+    <input type="text" id="degree"><br><br><br>
+
+    <h1 id="ans"></h1>
+
+
+   </center>
+</body>
+</html>
+
+<script>
+
+    let a  = document.getElementById("degree").value  
+    
+    
+    if(a > 80){
+        // document.getElementById("ans").innerHTML = "It's Hot"
+        document.write("<center> <h1> it's Hot </h1> </center>")
+    }
+    else{
+        document.write("<center> <h1> it's cold </h1> </center>")
+    }
+</script>

@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Q - 5</title>
+</head>
+<body>
+
+    <center>
+    <label for="">Enter First Value</label><br><br>
+    <input type="text" id="first"><br><br>
+
+    <label for="">Enter Second Value</label><br><br>
+    <input type="text" id="second"><br><br>
+
+    <label for="">Enter Third Value</label><br><br>
+    <input type="text" id="third"><br><br>
+
+    <label for="">Enter Fourth Value</label><br><br>
+    <input type="text" id="four"><br><br><br>
+
+    <h1 id="final"></h1>
+
+    </center>
+    
+</body>
+</html>
+
+<script>
+
+    let a = document.getElementById("first").value 
+    let b = document.getElementById("second").value
+    let c = document.getElementById("third").value
+    let d = document.getElementById("four").value
+
+
+    if(a > b && a > c && a > d){
+        document.getElementById("final").innerHTML = "The Largest Value is : A"
+    }
+    else if(b > a && b > c && b > d){
+        document.getElementById("final").innerHTML = "The Largest Value is : B"
+    }
+    else if(c > a && c > b && c > d){
+        document.getElementById("final").innerHTML = "The Largest Value is : C"
+    }
+    else{
+        document.getElementById("final").innerHTML = "The Largest Value is : D"
+    }
+    
+</script>

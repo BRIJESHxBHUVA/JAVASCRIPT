@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Q - 2</title>
+</head>
+<body>
+    
+
+    <center>
+        
+        <label for="">Enter Value</label><br><br>
+        <input type="text" id="value"><br><br><br>
+
+        <h1 id="final"></h1>
+    </center>
+</body>
+</html>
+
+<script>
+
+    let a = document.getElementById("value").value 
+
+    if(a == ""){
+        alert("Plese Enter Value !!")   
+    }
+
+    else{
+
+        if(a % 5 == 0 && a % 7 == 0){
+            document.getElementById("final").innerHTML = "User Inputted Number is devisible by 5 and 7."
+        }
+        else{
+            document.getElementById("final").innerHTML = "Incorrect Value"
+        }
+    }
+</script>

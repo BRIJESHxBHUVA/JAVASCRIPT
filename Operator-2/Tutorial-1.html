@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Q - 1</title>
+</head>
+<body>
+    <center>
+
+        
+        <br><br>
+    <label>Number - 1</label>
+    <input type="text" placeholder="First Value " id="i1">
+    <br>
+    <label>
+        Number - 2
+    </label>
+    <input type="text" placeholder="Second Value" id="i2">
+    <br>
+    <label>
+       Number - 3
+    </label>
+    <input type="text" placeholder="Third Value" id="i3">
+    <br>
+    <label>
+       Number - 4
+    </label>
+    <input type="text" placeholder="Fourth Value" id="i4">
+    <br>
+    <label>
+        Number - 5
+    </label>
+    <input type="text" placeholder="Fifth Value" id="i5">
+    <br><br>
+
+
+    <h1>Before</h1><br><br>
+    <h1 id="box-2"></h1>
+    <h1 id="box-1"></h1>
+    <h1 id="box-3"></h1>
+    <h1 id="box-4"></h1>
+    <h1 id="box-5"></h1><br>
+
+
+    <h1>After</h1><br><br>
+
+    <h1 id="box-10"></h1>
+    <h1 id="box-20"></h1>
+    <h1 id="box-30"></h1>
+    <h1 id="box-40"></h1>
+    <h1 id="box-50"></h1>
+
+
+
+    </center>
+</body>
+</html>
+
+<script>
+
+    let a = document.getElementById("i1").value;
+    let b = document.getElementById("i2").value;
+    let c = document.getElementById("i3").value;
+    let d = document.getElementById("i4").value;
+    let e = document.getElementById("i5").value;
+
+
+    document.getElementById("box-1").innerText = a
+    document.getElementById("box-2").innerText = b
+    document.getElementById("box-3").innerText = c
+    document.getElementById("box-4").innerText = d
+    document.getElementById("box-5").innerText = e
+
+    document.getElementById("box-10").innerText = e
+    document.getElementById("box-20").innerText = a
+    document.getElementById("box-30").innerText = b
+    document.getElementById("box-40").innerText = c
+    document.getElementById("box-50").innerText = d
+</script>
+
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    
+    <center>
+
+        <label for="">first dish value</label> <br>
+        <input type="text" placeholder="enter amout" id="i1"> <br><br>
+
+        <label for="">second dish value</label> <br>
+        <input type="text" placeholder="enter amout" id="i2"> <br><br>
+
+        <label for="">third dish value </label> <br>
+        <input type="text" placeholder="enter amout" id="i3"> <br><br>
+
+        <label for="">fourth dish value</label> <br>
+        <input type="text" name=""  placeholder="enter amout" id="i4"> <br><br>
+
+        <label for="">last dish value</label> <br>
+        <input type="text" name=""  placeholder="enter amout" id="i5"> <br><br>
+        
+    </center>
+
+    <h1 id="ans"></h1>
+
+</body>
+</html>
+
+<script>
+
+    let a=document.getElementById("i1").value
+
+    let b=document.getElementById("i2").value
+
+    let c=document.getElementById("i3").value
+
+    let d=document.getElementById("i4").value
+
+    let e=document.getElementById("i5").value
+
+    let f=+a + +b + +c + +d + +e;
+
+    let gst=f*18/100
+
+    let ser=+f*7/100
+
+    let ans1=f+gst+ser
+
+    document.getElementById("ans").innerHTML="Total amount to be pay : "+ ans1
+
+</script>
+
+
+<script>
+
+
+</script>

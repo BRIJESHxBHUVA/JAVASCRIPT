@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Q - 2</title>
+</head>
+<body>
+    
+    <center>
+
+        <label for="">Enter Amount</label><br><br>
+        <input type="text" id="cash"><br><br>
+        <label for="">Enter Interest</label><br><br>
+        <input type="text" id="rate"><br><br><br>
+
+        <label for="">Tax on Total Amount</label>
+
+        <h1 id="final"></h1>
+
+    </center>
+</body>
+</html>
+
+<script>
+
+    let a = document.getElementById("cash").value 
+    let b = document.getElementById("rate").value
+    
+    let c = document.getElementById("final").value
+    c = (a * b) / 100
+    
+    if(a == "" && b == ""){
+        document.write("")
+    }
+    else{
+
+        if(a <= 10000 && b == 5){
+        document.getElementById("final").innerHTML = c
+    }
+    else if(a <= 20000 && b == 10){
+        document.getElementById("final").innerHTML = c
+    }
+    else if(a <= 30000 && b == 15){
+        document.getElementById("final").innerHTML = c
+    }
+    else if(a <= 40000 && b == 20){
+        document.getElementById("final").innerHTML = c
+    }
+    else if(a > 40000 && b == 25){
+        document.getElementById("final").innerHTML = c
+    }
+
+
+    }
+
+    
+</script>

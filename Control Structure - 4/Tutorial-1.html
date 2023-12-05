@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Q - 1</title>
+</head>
+<body>
+    
+
+    <center>
+
+        <label for="">Enter Electricity Bill Point</label><br><br>
+        <input type="text" id="point"><br><br><br>
+
+        <h1 id="final"></h1>
+    </center>
+</body>
+</html>
+
+<script>
+
+let a = document.getElementById("point").value 
+let b = 1
+
+let x = document.getElementById("final").value
+
+if(a <= 100){
+   c =  a*b
+   
+}
+else if(a <= 200){
+   b++
+   c =  a * b / 1.5
+ 
+}
+else if(a > 200){
+    b++
+    b++
+    c = (a * b) - 300
+}
+
+
+document.getElementById('final').innerHTML = "Your electricity bill is: "+ (c) + ".00";
+
+
+</script>

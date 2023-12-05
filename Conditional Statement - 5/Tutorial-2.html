@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Q - 2</title>
+</head>
+<body>
+
+    <center>
+
+   
+
+     <label for="">Enter First Value </label><br><br>
+    <input type="number" id="first"><br><br>
+
+    <label for="">Enter Second Value </label><br><br>
+    <input type="number" id="second"><br><br><br>
+
+    <label for="">Enter Operator </label><br><br>
+    <input type="text" id="op"><br><br>
+
+        <h1 id="final"></h1>
+    </center>
+
+    
+    
+</body>
+</html>
+
+<script>
+    let x = document.getElementById("op").value
+    let a = document.getElementById("first").value 
+    let b = document.getElementById("second").value
+    let c;
+    // let c = document.getElementById("final").value
+
+    switch(x){
+        case "+" : 
+         c = +a + +b
+         console.log(c)
+        break;
+
+        case "-" : 
+        c = +a - +b
+        console.log(c)
+        break;
+
+        case "*" : 
+        c = +a * +b
+        console.log(c)
+        break;
+
+        case "/" : 
+        c = +a / +b
+        console.log(c)
+        break;
+
+        default : c = "Enter Valid Value."
+    }
+    // console.log(`${c}`)
+</script>

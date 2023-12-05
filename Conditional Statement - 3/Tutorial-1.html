@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Q - 1</title>
+</head>
+<body>
+
+    <center>
+
+        <label for="">Enter Password</label><br><br>
+        <input type="text" id="ps"><br><br><br>
+
+        <h1 id="result"></h1>
+    </center>
+    
+</body>
+</html>
+
+<script>
+
+    let ps = 'abc@123'
+    let enterps = document.getElementById("ps").value
+    
+    if(ps === enterps){
+        alert("Log in")      
+    }
+    else{
+
+        let newps = prompt("Forgot Password ? Create a New Password !")
+        if(newps.length >= 8){
+            document.getElementById("result").innerHTML = "Password Changed"
+        }
+        else{
+            document.getElementById("result").innerHTML = "Max 8 Charater Required"
+        }
+    }
+</script>

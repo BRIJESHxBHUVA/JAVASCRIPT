@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Q - 4</title>
+</head>
+<body>
+    <center>
+
+        <label for="">Enter Value </label><br><br>
+    <input type="text" id="input"><br><br>
+
+    </center>
+</body>
+</html>
+
+<script>
+
+    let a = document.getElementById("input").value 
+
+    if(a == ""){
+        document.write("")
+    }
+
+    else{
+        
+
+        if(a == "a" || a == "e" || a == "i" || a == "o" || a == "u" || a == "A" || a == "E" || a == "I" || a == "O" || a == "U"){
+        document.write("<center> <h1> Given Charater is Vowel. </h1> </center>")
+    }
+    else{
+        document.write("<center> <h1> Given Charater is Not Vowel. </h1> </center>")
+    }
+
+    }
+</script>

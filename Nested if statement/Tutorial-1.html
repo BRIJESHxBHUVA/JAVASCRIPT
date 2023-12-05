@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Q - 1</title>
+</head>
+<body>
+    
+
+    <center>
+
+        <label for="">Enter The Value</label><br><br>
+        <input type="text" id="input"><br><br><br>
+
+        <h1 id="output"></h1>
+
+    </center>
+</body>
+</html>
+
+<script>
+
+    let a = document.getElementById("input").value
+    
+    
+    if(a == ""){
+        document.getElementById("output").innerHTML = a +""
+    }
+
+    else{
+
+        if(a > 90 && a < 100){
+            document.getElementById("output").innerHTML = "A grade"
+        }
+        else if(a >= 80 && a <= 89){
+            Document.getElementById("output").innerHTML = "B Grade"
+        }
+        else if(a >= 70 && a <= 79){
+            document.getElementById("output").innerHTML = "C Grade"
+        }
+        else if(a >= 60 && a <= 69){
+            document.getElementById("output").innerHTML = "D Grade"
+        }
+        else if(a > 0 && a <= 59){
+            document.getElementById("output").innerHTML = "Fail"
+        }
+    }
+</script>

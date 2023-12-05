@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Q - 1</title>
+</head>
+<body>
+
+    <center>
+
+        <label for="">Enter Day Number</label><br><br>
+        <input type="text" id="day"><br><br><br>
+
+    </center>
+    
+</body>
+</html>
+
+<script>
+
+    let a = document.getElementById("day").value 
+
+    let dayname  
+
+    switch(parseInt(a)){
+        case 1 : dayname = "Monday "
+        dayname += "it's Start of The Workweek"
+        break;
+
+        case 2 : dayname = "Tuesday "
+        dayname += "it's Some Other Day."
+        break;
+
+        case 3 :  dayname = "Wednesday "
+        dayname += "it's Some Other Day."
+        break;
+
+        case 4 :  dayname = "Thursday "
+        dayname += "its Some Other Day."
+        break;
+
+        case 5 :  dayname = "Friday "
+        dayname += "it's Almost The Weekend"
+        break;
+
+        case 6 : dayname = "Saturday "
+        dayname += "Half Day";
+        break;
+
+        case 7 : dayname = "Sunday : "
+        dayname += "Ravivar ni Rza Ramvani Mazza."
+        break;
+
+        default : dayname = "Enter Valid Number."
+    }
+
+    console.log(dayname)
+</script>

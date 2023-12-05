@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Q - 4</title>
+</head>
+<body>
+
+    <center>
+
+        <label for="">Enter A a</label><br><br>
+        <input type="text" id="year"><br><br><br>
+
+        <h1 id="final"></h1>
+    </center>
+    
+</body>
+</html>
+
+<script>
+
+let a = document.getElementById("year").value;
+
+if (a === "") {
+  document.getElementById("final").innerText = "";
+}
+else {
+
+  if ((a % 4 === 0 && a % 100 !== 0) || (a % 400 === 0)) {
+      document.getElementById("final").innerHTML = a + " is a leap a.";
+  } else {
+      document.getElementById("final").innerHTML = a + " is not a leap a.";
+  }
+  
+}
+
+
+</script>

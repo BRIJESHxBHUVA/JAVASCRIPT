@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Q - 4</title>
+</head>
+<body>
+
+    <center>
+
+        <label for="">Enter Transport</label><br><br>
+        <input type="text" id="val"><br><br><br>
+        <h1 id="final"></h1>
+    </center>
+    
+</body>
+</html>
+
+<script>
+
+    let a = document.getElementById("val").value 
+
+
+    if(a == ""){
+        document.write("")
+    }
+    else{
+
+        if(a == 'Local'){
+            document.getElementById("final").innerHTML = "$5 + $1 per pound"
+        }
+        else if(a == 'National'){
+            document.getElementById("final").innerHTML =  "$10 + $2 per pound"
+        }
+        else if(a == 'International'){
+            document.getElementById("final").innerHTML = "$20 + $5 per pound"
+        }
+    }
+</script>

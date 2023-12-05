@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Q - 3</title>
+</head>
+<body>
+    
+    <center>
+
+        <label for="">Enter Age</label><br><br>
+        <input type="text" id="age"><br><br><br>
+
+        <h1 id="output"></h1>
+        
+    
+    </center>
+</body>
+</html>
+
+<script>
+
+    let a = document.getElementById("age").value 
+    let b = document.getElementById("output").value
+    b = 8
+
+    if(a == ""){
+        document.write("")
+    }
+    else{
+
+        if(a <= 12){
+            document.getElementById("output").innerHTML = "Ticket Price - $ 8"
+        }
+        else if(a <= 64){
+            document.getElementById("output").innerHTML = "Ticket Price - $ 15"
+        }
+        else if(a >= 65){
+            document.getElementById("output").innerHTML = "Ticket Price - $ 10"
+        }
+  
+  }
+</script>

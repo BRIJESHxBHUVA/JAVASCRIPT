@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Q - 5</title>
+</head>
+<body>
+
+    <center>
+
+        <label for="">Enter Products Name </label><br><br>
+        <input type="text" id="item"><br><br><br>
+
+        <h1 id="final"></h1>
+    </center>
+    
+</body>
+</html>
+
+<script>
+
+    let a = document.getElementById("item").value 
+
+    if(a == ""){
+        document.write("")
+    }
+    else{
+
+        if(a == "Electronics"){
+            document.getElementById("final").innerHTML = "10% off for 2 or more items"
+        }
+        else if(a == "Clothing"){
+            document.getElementById("final").innerHTML = "Buy 1 Get 1 50% off"
+        }
+        else if(a == "Ongoing promotions"){
+            document.getElementById("final").innerHTML = "Additional discount based on specific product or time-limited offers"
+        }
+    }
+</script>

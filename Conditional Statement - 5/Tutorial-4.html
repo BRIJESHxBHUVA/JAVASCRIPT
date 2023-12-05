@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Q - 4</title>
+</head>
+<body>
+    
+    <center>
+
+        <label for="">Enter your Lenguage</label><br><br>
+        <input type="text" id="len"><br><br>
+
+    </center>
+</body>
+</html>
+
+<script>
+
+    let a = document.getElementById("len").value 
+    let x
+
+    switch(a){
+        case "english":
+        x = "Hello !!"
+        console.log(x)
+        break;
+
+        case "spanish" : 
+        x = "Hola !!";
+        console.log(x)
+        break;
+
+        case "french" : 
+        x = "Bonjour !!"
+        console.log(x)
+        break;
+
+        default : x = "Language not supported."
+    }
+</script>

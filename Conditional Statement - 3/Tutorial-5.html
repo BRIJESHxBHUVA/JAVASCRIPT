@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Q - 5</title>
+</head>
+<body>
+
+    <center>
+
+        <label for="">Enter Charater</label><br><br>
+        <input type="text" id="char"><br><br><br>
+        <h1 id="result"></h1>
+    </center>
+    
+</body>
+</html>
+
+<script>
+
+    let a = document.getElementById("char").value 
+
+    if(a == ""){
+        alert('Please Enter Character')
+    }
+    else{
+        if(a == 'a' || a == 'i' || a == 'o' || a == 'u' || a == 'e' || a == 'A' || a == 'E' || a == 'I' || a == 'O' || a == 'U' || a == 'E'){
+            document.getElementById("result").innerHTML = "Charater is a Vowel."
+        }
+        else{
+            document.getElementById("result").innerHTML = "Charater is a Consonant."
+    }
+    }
+</script>
