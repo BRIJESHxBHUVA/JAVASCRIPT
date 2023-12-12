@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Q - 5</title>
+</head>
+<body>
+    
+</body>
+</html>
+
+<script>
+
+    let a = 456;
+    let product = 1;
+
+    function sumofnum(){
+        while(a > 0){
+            product *= a % 10;
+            a = parseInt(a / 10);
+        }
+        console.log(parseInt(product));
+    }
+    sumofnum()
+</script>

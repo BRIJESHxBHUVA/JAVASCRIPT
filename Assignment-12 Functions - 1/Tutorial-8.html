@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Q - 8</title>
+</head>
+<body>
+    <center>
+
+        <label for="">Enter True or False</label><br><br>
+        <input type="text" id="in"><br><br><br>
+
+        <h1 id="output"></h1>
+    </center>
+</body>
+</html>
+
+<script>
+
+    let darkMode = document.getElementById("in").value 
+    let a = document.getElementById("output").value
+
+    if(darkMode == "true"){
+        console.log("ON");
+        document.getElementById("output").innerHTML = "ON";
+    }
+    else{
+        console.log("OFF !!");
+        document.getElementById("output").innerHTML = "OFF !!";
+    }
+</script>

@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Q - 7</title>
+</head>
+<body>
+    
+</body>
+</html>
+
+<script>
+
+    let weight,height,BMI;
+
+    function calculateBMI(weight,height) {
+        BMI = weight / (height * height)
+        return BMI;
+    }
+    weight = prompt("Enter Weight : ");
+    height = prompt("Enter Height : ");
+    if(weight < 0 || height < 0) {
+        alert('Input is not valid! Please enter a positive number');
+    }
+    else{
+        document.write("<center><h2> Your BMI is :"+ calculateBMI(weight,height) + "</h2></center>");
+    }
+
+    calculateBMI(weight,height);
+
+</script>
