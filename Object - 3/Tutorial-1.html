@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Q - 1</title>
+</head>
+<body>
+    
+</body>
+</html>
+
+<script>
+
+    let Students = [
+        {Name : "Amit",Marks : 90},
+        {Name : "Sagar",Marks : 55},
+        {Name : "Bali",Marks : 98},
+        {Name : "Nanu",Marks : 68},
+        {Name : "Bholi",Marks : 93},
+    ]
+
+
+    let Topten = []
+    for(let i = 0; i < Students.length; i++){
+        if(Students[i].Marks >= 90){
+            Topten.push(Students[i].Name)
+            Topten.push(Students[i].Marks)
+        }
+    }
+
+    console.log(Topten);
+</script>

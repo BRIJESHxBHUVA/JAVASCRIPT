@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Q - 3</title>
+</head>
+<body>
+    
+</body>
+</html>
+
+<script>
+
+    let Book = [
+        {Title : "Indian Economics System",
+        Author : "Dr. Manmohansingh",
+        Price : 55,
+         Stock : 120},
+
+        {Title : "The Story of Success",
+        Author : "Dr. A.P.J Abdul Kalam",
+        Price : 65,
+         Stock : 0},
+
+        {Title : "Simple Life",
+        Author : "Narendra Modi",
+        Price : 35, 
+        Stock : 32},
+
+        {Title : "Glory of 1947",
+        Author : "Mahatma Gandhi",
+        Price : 59,
+         Stock : 0},
+    ]
+
+    let BooksAvailables = []
+
+    for(i in Book){
+        if (Book[i].Price <= 60 && Book[i].Stock > 0){
+            BooksAvailables.push(Book[i].Title)
+            BooksAvailables.push(Book[i].Author)
+            BooksAvailables.push(Book[i].Price)
+            BooksAvailables.push(Book[i].Stock)
+           
+        }
+    }
+
+    console.log(BooksAvailables);
+ </script>

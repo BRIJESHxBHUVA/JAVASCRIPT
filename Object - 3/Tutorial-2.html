@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Q - 2</title>
+</head>
+<body>
+    
+</body>
+</html>
+
+<script>
+
+    let Quotes = [
+
+    {Text : "Look at the sky. We are not alone. The whole universe is friendly to us and conspires only to give the best to those who dream and work.",Author: "A.P.J Abdul Kalam",Category : "Life"},
+    {Text : "The time you feel lonely is the time you most need to be by yourself.",Author: "Douglas Coupland",Category : "Education"},
+    {Text : "The strongest man in the world is he who stands most alone.",Author: "Henrik Isben",Category : "Education"},
+    {Text : "I restore myself when I'm alone.",Author: "Marliyn Monroe",Category : "Love"},
+
+    ]
+
+    let EducationQuotes = []
+
+    for(i in Quotes){
+        if (Quotes[i].Category === "Education"){
+
+            EducationQuotes.push(Quotes[i].Text)
+            EducationQuotes.push(Quotes[i].Author)
+            EducationQuotes.push(Quotes[i].Category)
+
+        }
+    }
+    console.log(EducationQuotes);
+</script>

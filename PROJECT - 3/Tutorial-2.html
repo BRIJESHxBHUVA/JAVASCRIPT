@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Q - 2</title>
+</head>
+<body>
+    
+</body>
+</html>
+
+<script>
+
+    let array = [2,5,12,7,25,10]
+
+    let array2 = array.filter((element)=>{
+        return element % 2 == 0
+    })
+    console.log("Even Value : " + array2);
+    let square = array2.map((element2)=>{
+        return element2 * element2;
+    })
+    console.log("Square of Even Value : "  + square);
+
+    let sumofsquare = square.reduce((a,b)=>{
+        return a + b;
+    })
+    console.log("Sum of Even Value's Square : " + sumofsquare);
+</script>
