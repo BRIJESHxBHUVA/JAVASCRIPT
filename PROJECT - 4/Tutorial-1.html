@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Q - 1</title>
+</head>
+<body>
+    <!-- <center>
+        <label for="">Enter Number</label><br><br>
+        <input type="text" id="input"><br>
+    </center> -->
+</body>
+</html>
+
+<script>
+   
+    function FindLargEven (number){
+
+        let EvenNumber = number.filter(function(number){
+            return number % 2 == 0;
+        })
+
+        return EvenNumber[EvenNumber.length * (EvenNumber.length > 0) - 1] || -1;
+    }
+    let output = [1,2,3,10,12,18,19];
+    console.log(FindLargEven(output));
+</script>

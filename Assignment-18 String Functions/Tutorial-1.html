@@ -8,29 +8,25 @@
 <body>
     <center>
 
-        <label for="">Enter String</label><br><br>
-        <input type="text" id="input"><br><br>
-
+        <label for="">Enter Anything Here</label><br><br>
+        <input type="text" id="input"><br>
     </center>
 </body>
 </html>
 
 <script>
 
-    let Array = document.getElementById("input").value;
-    let count = 0
-    for(let i = 0; i <= Array.length; i++) {
-        if(Array.charAt(i) == "a" || Array.charAt(i) == "e" || Array.charAt(i) == "i" || Array.charAt(i) == "o" || Array.charAt(i) == "u" || Array.charAt(i) == "A" || Array.charAt(i) == "E" || Array.charAt(i) == "I" || Array.charAt(i) == "O" || Array.charAt(i) == "U"){
-           count++
+
+    let string = document.getElementById("input").value 
+    
+    let count = 0;
+    
+        for(let i = 0; i < string.length; i++){
+            if(string.charAt(i) == 'a' || string.charAt(i) == 'e' || string.charAt(i) == 'i' || string.charAt(i) == 'o' || string.charAt(i) == 'u' || string.charAt(i) == 'A' || string.charAt(i) == 'E' || string.charAt(i) == 'I' || string.charAt(i) == 'O' || string.charAt(i) == 'U'){
+                count++;
+            }
         }
-        else{
-            continue;
-        }
-    }
-    document.write("<center><h1>"+Array+"</h1></center>")
-
-    document.write("<center><h1> Numbers Of Vowels : " + count + "</h1></center>")
-
-    console.log(count);
-</script>
-
+        document.write("<center><h1>"+ string +"<br><br> Total Vowel in String is : "+ count +"</h1></center>")
+        console.log(count);
+    
+    </script>

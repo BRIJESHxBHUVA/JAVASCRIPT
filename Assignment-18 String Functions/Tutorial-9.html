@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Q - 9</title>
+</head>
+<body>
+    
+</body>
+</html>
+
+<script>
+
+    let Array = []
+    
+    for(let i = 0; i <= 10; i++){
+        Array.push(Math.ceil(Math.random()*100));
+     
+    }
+    let Max = Array.reduce((first,second)=>{
+        return first > second ? first : second;
+    })
+    let Min = Array.reduce((first,second)=>{
+        return first < second ? first : second;
+    })
+
+    document.write("<center><h1> All Ten Random Numbers are : " + Array + "</h1></center>");
+    document.write("<center><h1> Maximum Number Among All Numbers : " + Max + "</h1></center>");
+    document.write("<center><h1> Minimum Number Among All Numbers : " + Min + "</h1></center>");
+</script>

@@ -6,19 +6,33 @@
     <title>Q - 3</title>
 </head>
 <body>
-    
+    <center>
+
+       <form action="">
+        <!-- <label for="">Enter Your First Name : </label>
+        <input type="text" id="First"><br><br>
+
+        <label for="">Enter Your Last Name : </label>
+        <input type="text" id="Last"><br><br> -->
+
+        <label for="">Enter Your Full Name : </label>
+        <input type="text" id="Name"><br><br>
+       </form>
+
+    </center>
 </body>
 </html>
 
 <script>
 
-    let Person = {
-        firstName: 'John Doe',
-        
-        // Greet : function(){
-        //     console.log("Welcome !")
-        // }
-        
-    }
-    console.log("Welcome " + Person.firstName.substring(0,4))
+    // let FirstName = document.getElementById("First").value
+    // let LastName = document.getElementById("Last").value 
+    let fullname = document.getElementById("Name").value 
+    let first = fullname.split(" ");
+    
+    fullname = first[0];
+    let lastname = fullname[1];
+
+    document.write("<center><h1>Welcome "+ fullname +"</h1></center>");
+
 </script>

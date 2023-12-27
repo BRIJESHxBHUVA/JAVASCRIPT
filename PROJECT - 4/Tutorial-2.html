@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Q - 2</title>
+</head>
+<body>
+    
+</body>
+</html>
+
+<script>
+
+    function sumofsquaresofEvenNum(number) {
+        let EvenNumber = number.filter(function(number){
+            return number % 2 == 0;
+        })
+       let sumofsquare = 0;
+        EvenNumber.forEach(function (number) {
+        sumofsquare += number ** 2
+    })
+    return sumofsquare
+    }
+    let Array = [1, 2, 13, 19, 22, 23]
+    console.log(sumofsquaresofEvenNum(Array))
+</script>
