@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Q - 1</title>
+</head>
+<body>
+    
+</body>
+</html>
+
+<script>
+
+    let Books = [
+        {Title : "Title of Book : River of Smoke<br>",
+         Author : "Author of Book : Amitav Ghosh<br> Published in : ",
+         Publishes : 1998},
+        {Title : "Title of Book : The God of Small Things<br>",
+         Author : "Author of Book : Arundhati Roy <br> Published of Year : ",
+         Publishes : 2003},
+         {Title : "<br><br>Title of Book : Walking with the Comrades<br>",
+         Author : "Author of Book : Arundhati Roy<br>Year of Published : ",
+         Publishes : 1986},
+         {Title : "<br><br>Title of Book : Interpreter of Maladies<br>",
+          Author : "Author of Book : Jhumpa Lahiri<br>Year of Published : ",
+          Publishes : 2015}
+    ]
+
+    let OlderBooks = [];
+
+    for(i in Books){
+        if(Books[i].Publishes < 2000){
+            OlderBooks.push(Books[i].Title)
+            OlderBooks.push(Books[i].Author)
+            OlderBooks.push(Books[i].Publishes)
+         
+        }
+
+    }
+
+    document.write("<center><h1>The Books Which are Published Before 2000 : <br><br><br>" + OlderBooks);
+    console.log("The Books Which are Published Before 2000 : "+OlderBooks)
+</script>
