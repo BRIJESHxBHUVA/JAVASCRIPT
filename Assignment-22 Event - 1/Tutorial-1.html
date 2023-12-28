@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Q - 1</title>
+</head>
+<body>
+    <center>
+
+        <h1>First Heading</h1><br>
+        <h1>Second Heading</h1><br>
+        <h1>Third Heading</h1><br>
+        <h1>Fourth Heading</h1><br>
+
+       <button id="btn1">Tap to change color</button><br><br><br><br>
+
+        <h3>Fifth Heading</h3><br>
+        <h3>Sixth Heading</h3><br>
+        <h3>Seventh Heading</h3><br>
+        <h3>Eightth Heading</h3><br>
+
+        <button id="btn2">Tap to change color</button><br><br><br><br>
+
+        <h5>1.Heading</h5><br>
+        <h5>2.Heading</h5><br>
+        <h5>3.Heading</h5><br>
+        <h5>4.Heading</h5><br>
+
+        <button id="btn3">Tap to change color</button><br><br><br><br>
+
+    </center>
+</body>
+</html>
+
+<script>
+    document.getElementById("btn1").addEventListener("click",changecolor);
+   
+
+    function changecolor(){
+        let heading = document.querySelector('h1');
+        heading.style.color = 'red'
+    }
+
+    document.getElementById("btn2").addEventListener("click",changecolortogreen);
+
+    function changecolortogreen(){
+        let heading3 = document.querySelectorAll('h3');
+
+        for(let i = 0; i < heading3.length; i++){
+            heading3[i].style.color = 'green'
+        }
+        
+    }
+
+
+    document.getElementById("btn3").addEventListener("click",changecolortoblue);
+
+    function changecolortoblue (){
+        let heading4 = document.querySelectorAll('h5');
+
+        for(let i = 0; i < heading4.length; i++){
+            heading4[i].style.color = "blue"
+        }
+    }
+   
+</script>

@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Q - 2</title>
+</head>
+<body>
+    <center>
+    <h1 class="red">First Heading</h1><br>
+    <h1 class="blue">First Heading</h1><br>
+    <h1 class="red">First Heading</h1><br>
+
+
+    <h2 class="green">Second Heading</h2><br>
+    <h2 class="black" style="color: aqua;">Second Heading</h2><br>
+    <h2 class="green">Second Heading</h2><br>
+
+
+    <h3 class="orange">Third Heading</h3><br>
+    <h3 class="brown">Third Heading</h3><br>
+    <h3 class="orange">Third Heading</h3><br>
+
+
+    <button id="btn">Tap to change red color</button>
+    <button id="btn2">Tap to change blue color</button>
+    <button id="btn3">Tap to change green color</button><br><br><br>
+    <button id="btn4">Tap to change black color</button>
+    <button id="btn5">Tap to change orange color</button>
+    <button id="btn6">Tap to change brown color</button>
+</center>
+</body>
+</html>
+
+<script>
+
+    document.getElementById("btn").addEventListener("click",changetored);
+
+    function changetored(){
+        let heading = document.getElementsByClassName("red");
+        for(let i = 0; i < heading.length; i++){
+            heading[i].style.color = "red";
+        }
+    }
+
+    
+    document.getElementById("btn2").addEventListener("click",changetoblue);
+
+    function changetoblue (){
+        let heading2 = document.getElementsByClassName("blue");
+        for(let i = 0; i < heading2.length; i++){ 
+            heading2[i].style.color = "blue";
+        }
+    }
+
+
+    document.getElementById("btn3").addEventListener("click",changetogreen);
+
+    function changetogreen(){
+
+        let heading3 = document.getElementsByClassName("green");
+        for(let i = 0; i < heading3.length; i++){
+            heading3[i].style.color = "green"
+        }
+    }
+
+    document.getElementById("btn4").addEventListener("click",changetoblack);
+
+    function changetoblack(){
+
+        let heading4 = document.getElementsByClassName("black");
+        for(let i = 0; i < heading4.length; i++){
+            heading4[i].style.color = "black"
+        }
+    }
+
+    document.getElementById("btn5").addEventListener("click",changetoorange);
+
+    function changetoorange(){
+
+        let heading5 = document.getElementsByClassName("orange");
+        for(let i = 0; i < heading5.length; i++){
+            heading5[i].style.color = "orange"
+        }
+    }
+
+    document.getElementById("btn6").addEventListener("click",changetobrown);
+
+    function changetobrown(){
+
+        let heading6 = document.getElementsByClassName("brown");
+        for(let i = 0; i < heading6.length; i++){
+            heading6[i].style.color = "brown"
+        }
+    }
+</script>
