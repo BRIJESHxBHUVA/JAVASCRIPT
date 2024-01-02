@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Q - 1</title>
+</head>
+<body>
+    
+</body>
+</html>
+
+<script>
+
+
+    function validemail(email) {
+
+        if(!email.includes('@')) {
+            throw new Error("Email should have @.")+
+            alert("Plese Enter Valid Email Address.");
+        }
+        else{
+            document.write("<center><h1>valid email address : ",email,"</h1></center>");
+        }
+    }
+
+    try{
+
+        validemail("bhuvabrijesh14@gmail.com")
+        // prompt();
+    }
+    catch (e){
+        console.log("Error :",e);
+    }
+</script>

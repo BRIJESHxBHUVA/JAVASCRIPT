@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Q - 1</title>
+</head>
+<body>
+    
+
+    <center>
+
+        <label for="">Enter First Value</label>
+        <input type="text" id="input"><br><br>
+
+        <label for="">Enter Second Value</label>
+        <input type="text" id="input2"><br><br>
+
+        <label for="">Enter Third Value</label>
+        <input type="text" id="input3"><br><br>
+
+        <label for="">Enter Fourth Value</label>
+        <input type="text" id="input4"><br><br><br><br>
+
+        <h1 id="final"></h1><br><br><br>
+
+        <button id="sum">Tap to Sum</button>
+        <button id="sub">Tap to Substract</button>
+        <button id="multy">Tap to Multiply</button>
+        <button id="dyd">Tap to Devide</button>
+    </center>
+</body>
+</html>
+
+<script>
+
+    document.getElementById("sum").addEventListener("click",sumofnum);
+
+    function sumofnum(){
+        let num1 = parseFloat(document.getElementById("input").value) || 0;
+        let num2 = parseFloat(document.getElementById("input2").value) || 0;
+        let num3 = parseFloat(document.getElementById("input3").value) || 0;
+        let num4 = parseFloat(document.getElementById("input4").value) || 0;
+
+        let sum = +num1 + +num2 + +num3 + +num4;
+
+        document.getElementById("final").innerHTML = "Sum of Four Numbers : "+sum;
+    }
+
+    document.getElementById("sub").addEventListener("click",subofnum);
+
+    function subofnum(){
+        let num1 = parseFloat(document.getElementById("input").value) || 0;
+        let num2 = parseFloat(document.getElementById("input2").value) || 0;
+        let num3 = parseFloat(document.getElementById("input3").value) || 0;
+        let num4 = parseFloat(document.getElementById("input4").value) || 0;
+
+        let sub = +num1 - +num2 - +num3 - +num4;
+
+        document.getElementById("final").innerHTML = "Substract of Four Numbers : "+sub;
+    }
+
+    document.getElementById("multy").addEventListener("click",multyofnum);
+
+    function multyofnum(){
+        let num1 = parseFloat(document.getElementById("input").value) || 0;
+        let num2 = parseFloat(document.getElementById("input2").value) || 0;
+        let num3 = parseFloat(document.getElementById("input3").value) || 0;
+        let num4 = parseFloat(document.getElementById("input4").value) || 0;
+
+        let multy = +num1 * +num2 * +num3 * +num4;
+
+        document.getElementById("final").innerHTML = "Multiply of Four Numbers : "+multy;
+    }
+
+    document.getElementById("dyd").addEventListener("click",dydofnum);
+
+    function dydofnum(){
+        let num1 = parseFloat(document.getElementById("input").value) || 0;
+        let num2 = parseFloat(document.getElementById("input2").value) || 0;
+        let num3 = parseFloat(document.getElementById("input3").value) || 0;
+        let num4 = parseFloat(document.getElementById("input4").value) || 0;
+
+        let dyd = +num1 / +num2 / +num3 / +num4;
+
+        document.getElementById("final").innerHTML = "Devide of Two Numbers : "+dyd;
+    }
+</script>

@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Q - 3</title>
+</head>
+<body>
+    
+
+   <h1 id="first">Your FirstName</h1><br><br>
+
+   <div id="last">Your LastName</div><br><br><br>
+
+   <p id="full">Your First & Last Name</p>
+
+   <hr>
+
+   <button onclick="setFirstname()">First Name</button>
+   <button onclick="setLastname()">Last Name</button>
+   <button onclick="setFullname()">Full Name</button>
+   <button onclick="setbydefault()">Reset Name</button>
+
+</body>
+</html>
+
+<script>
+
+    let first = "Brijesh "
+    let last = "Bhuva"
+
+    let full = first + last
+
+    function setFirstname() {
+        document.getElementById("first").innerHTML = first
+    }
+
+    function setLastname(){
+        document.getElementById("last").innerHTML = last
+    }
+
+    function setFullname (){
+        document.getElementById("full").innerHTML = full
+    }
+
+    function setbydefault(){
+        first = document.getElementById("first").innerHTML = ""
+        last = document.getElementById("last").innerHTML = ""
+        full = document.getElementById("full").innerHTML = ""
+    }
+</script>
+
+
+<!-- <!DOCTYPE html> 
+<html>
+ <head>
+  
+ <title>Content Manipulation</title>
+ </head> 
+<body>
+ 
+<h1 id="firstname">Your FirstName</h1>
+   
+<div id="lastname">
+
+Your LastName  </div>
+  
+<p id="fullname">Your First&LastName</p>
+ 
+<hr/>
+   
+<button onclick="setFirstName()">FIRSTNAME</button>
+
+<button onclick="setLastName()">LASTNAME</button>
+ 
+<button onclick="setFullName()">FIRSTNAME NAME</button> 
+
+<button onclick="resetDefaults()">RESET DEFAULTS</button>
+ 
+
+</body>
+</html>
+
+<script>
+    let firstname = "AYAN"
+let lastname = "SANGANI"
+let fullname = firstname + lastname
+
+function setFirstName(){
+   document.getElementById("firstname").innerText=firstname
+}     
+ 
+    
+function setLastName() {
+    document.getElementById('lastname').innerHTML = lastname    
+}
+ 
+      
+ 
+function setFullName() {    
+    document.getElementById('fullname').innerHTML = fullname 
+}
+ 
+      
+ 
+ 
+function resetDefaults(){
+    firstname = document.getElementById("firstname").innerHTML=""  
+    lastnamestname = document.getElementById("lastname").innerHTML=""
+    fullname = document.getElementById("fullname").innerHTML=""  
+ 
+}
+  
+</script> -->

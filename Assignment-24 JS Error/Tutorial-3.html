@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Q - 3</title>
+</head>
+<body>
+    
+</body>
+</html>
+
+<script>
+
+    function checkage(age) {
+
+        if(age < 18){
+            throw new Error(alert("Not eligible to vote.")+"Not eligible to vote.");
+        }
+        else{
+        document.write("<center><h1>You can vote.  ", age+"</h1></center>");
+        }
+
+    }
+
+    try{
+        checkage("18");
+
+    }
+    catch(age){
+        console.log("Error :",age.message);
+    }
+</script>

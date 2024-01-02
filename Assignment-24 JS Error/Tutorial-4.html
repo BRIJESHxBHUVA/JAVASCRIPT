@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Q - 4</title>
+</head>
+<body>
+    
+</body>
+</html>
+
+<script>
+
+    function checknum(num,num2) {
+
+        if(num2 < 0){
+            throw new Error(alert("Number not divisible by 0")+"Number not divisible by 0");
+        }
+        else{
+            document.write("<center><h1>Your Number is :  ", num,num2+"</h1></center>");
+        }
+    }
+
+    try{
+
+        checknum(18 , 45);
+
+    }
+    catch(number){
+        console.log("Error ",number.massage);
+    }
+</script>

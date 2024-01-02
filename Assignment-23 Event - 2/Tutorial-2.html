@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Q - 2</title>
+</head>
+
+<body>
+    <center>
+
+        <label for="">Enter Age of Person</label>
+        <input type="text" id="num"><br><br><br>
+
+        <p id="final"></p>
+        <br><br><br>
+
+        <button id="license">Show Result</button>
+
+    </center>
+</body>
+
+</html>
+
+<script>
+
+    document.getElementById("license").addEventListener("click", agecheck);
+
+
+    function agecheck() {
+
+        result = document.getElementById("final").value;
+
+        let Age = document.getElementById("num").value;
+
+
+            if (Age < 18) {
+                document.getElementById("final").innerHTML = "You can't drive in india !"
+            }
+            else if (Age == 18) {
+                document.getElementById("final").innerHTML = "You are just old enough to drive in India!"
+            }
+
+            else  {
+
+                document.getElementById("final").innerHTML = "You can drive in india."
+            }
+
+
+        }
+
+
+ 
+</script>
