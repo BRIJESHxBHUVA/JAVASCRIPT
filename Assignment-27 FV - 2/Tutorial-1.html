@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Q - 1</title>
+</head>
+<body>
+    <center>
+
+        <form action="" id="contactForm">
+
+            <label for="">Enter Your Name</label>
+            <input type="text" id="name" required><br><br>
+
+            <label for="">Enter Your email address</label>
+            <input type="email" id="email" placeholder="example@domain.com"><br><br>
+
+            <label for="">Enter Your Phone Number</label>
+            <input type="text" id="number" required><br><br>
+
+            <label for="">Enter Your Password</label>
+            <input type="text" id="password"><br><br>
+
+            <label for="">Enter Conform Password</label>
+            <input type="text" id="conform"><br><br>
+
+
+            <button type="submit">Submit Details</button><br><br><br>
+
+            <span id="err"></span>
+        </form>
+    </center>
+</body>
+</html>
+
+<script>
+
+    $(document).ready(function(){
+
+        isValid = true
+       
+        // $("#contactForm").submit(function(e){
+        //     var name = $("#name").val()
+        //     if(name === ""){
+        //         isValid = false;
+        //         alert("Enter Valid Name");
+        //     }
+           
+        //     if(email === ""){
+        //         isValid = false;
+        //         alert("Enter Email ID");
+        //     }
+        //     else if(!email.endsWith("@gmail.com")){
+        //         isValid = false;
+        //         alert("Plese Enter Valid Email Id");
+        //     }
+        //     var mobile = $("#number").val()
+        //     var rezix = /^\d{10}$/
+        //     if(mobile === "" || !rezix.test(mobile)){
+        //         isValid = false;
+        //         alert("Enter Valid Mobile Number");
+        //     }
+        //     var password = $("#password").val();
+        //     var conformPassword = $("#conform").val();
+        //     if(password != conformPassword){
+        //         isValid = false;
+        //         alert("Enter Both Password Are same..");
+        //     }
+        //     else if(isValid = true){
+        //     alert("Detailed Entered Successfullly !!");
+        // }
+            
+        // })
+
+        $("#contactForm").submit(function(e){
+
+           
+
+
+            let name = $("#name").val();
+
+            if(name === ""){
+                isValid = false;
+                alert("Plese Enter Valid Name..");
+            }
+
+            let email = $("#email").val();
+
+            if(email === "" ||email.endsWith("@gmail.com")){
+                isValid = false;
+                alert("Plese Enter Valid Email Id");
+            }
+
+
+            let number = $("#number").val();
+
+            if(number === "" || number == /^\d{10}$/){
+                isValid = false;
+                alert("Please enter 10 digit valid Phone Number.");
+            }
+
+
+            let password = $("#password").val();
+            let conform = $("#conform").val();
+
+            if(password === "" && conform != password){
+                isValid = false;
+                alert("Both Fields are required to same fill out.")
+            } 
+           
+        })
+       
+    })
+</script>
+
